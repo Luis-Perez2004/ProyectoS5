@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoS5.ViewPost"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="INGRESO DE DATOS" FontSize="Large" HorizontalTextAlignment="Center"/>
+            
+            <Entry x:Name="txtcodigo" Placeholder="Ingrese el codigo" Keyboard="Telephone"/>
+            <Entry x:Name="txtnombre" Placeholder="Ingrese el nombre"/>
+            <Entry x:Name="txtapellido" Placeholder="Ingrese el apellido"/>
+            <Entry x:Name="txtedad" Placeholder="Ingrese la edad" Keyboard="Telephone"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <Button Grid.Row="0" Grid.Column="0" Text="Ingresar" x:Name="btnIngresar" Clicked="btnIngresar_Clicked"/>
+
+                <Button Grid.Row="0" Grid.Column="1" Text="Regresar" x:Name="btnRegresar" Clicked="btnRegresar_Clicked"/>
+
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
